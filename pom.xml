@@ -25,5 +25,11 @@
             <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>net.lightbody.bmp</groupId>
+            <artifactId>browsermob-core</artifactId>
+            <version>2.1.5</version>
+        </dependency>
     </dependencies>
 </project>
