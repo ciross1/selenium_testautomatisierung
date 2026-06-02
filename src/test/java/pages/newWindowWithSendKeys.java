@@ -41,7 +41,16 @@ public class newWindowWithSendKeys {
 
 
 
+    }
 
+
+    @Test
+    void newTab() throws InterruptedException{
+
+        webDriver.get("https://the-internet.herokuapp.com/windows");
+        webDriver.switchTo().newWindow(WindowType.TAB);
+        webDriver.get("https://the-internet.herokuapp.com/typos");
+        Assertions.assertEquals(2, webDriver.getWindowHandles().toArray().length);
     }
 }
 
